@@ -4,11 +4,11 @@ Este é um jogo simples do Sonic, criado utilizando HTML, JavaScript e CSS.
 
 ## Descrição
 
-Este jogo consiste em controlar o personagem Sonic usando a tecla de espaço para pular e evitar colidir com os obstáculos representados pelos espinhos.
+Este jogo consiste em controlar o personagem Sonic usando qualquer tecla para pular e evitar colidir com os obstáculos representados pelos espinhos.
 
 ## Funcionalidades
 
-- O Sonic pula quando a tecla de espaço é pressionada.
+- O Sonic pula quando alguma tecla é pressionada.
 - O objetivo é evitar os espinhos.
 - A pontuação aumenta à medida que o Sonic avança sem colidir.
 - Se o Sonic colidir com os espinhos, o jogo é reiniciado.
