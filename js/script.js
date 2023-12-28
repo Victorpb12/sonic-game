@@ -13,14 +13,17 @@ const jump = () => {
 
     setTimeout(() => {
       sonic.classList.remove('jump');
-      sonic.src = './images/sonic-run.gif';
-      sonic.style.width = '100px';
+      // Verifica se não houve colisão antes de mudar para a animação de corrida
+      if (!collisionDetected) {
+        sonic.src = './images/sonic-run.gif';
+        sonic.style.width = '100px';
+      }
     }, 500);
   } else {
-    // Reseta o jogo depois de bater ao clicar em uma tecla
     resetGame();
   }
 };
+
 
 const loop = setInterval(() => {
   const spikesPosition = spikes.offsetLeft;
@@ -29,7 +32,7 @@ const loop = setInterval(() => {
   if (spikesPosition <= 120 && spikesPosition > 0 && sonicPosition < 80) {
     if (!collisionDetected) {
       collisionDetected = true;
-          // Para a animação do spike quando bater nele
+      // Para a animação do spike quando bater nele
       spikes.style.animation = 'none';
       spikes.style.left = `${spikesPosition}px`;
 
